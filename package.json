@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "build-vercel": "npx vercel pull --yes --environment=production && npx vercel build --prod",
+    "deploy-vercel": "npx vercel deploy --prod --prebuilt"
   },
   "dependencies": {
     "next": "12.2.3",
